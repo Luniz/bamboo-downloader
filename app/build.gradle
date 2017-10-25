@@ -20,8 +20,6 @@ repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 
-
-
 dependencies {
     // Fabric
     compile('com.crashlytics.sdk.android:crashlytics:2.7.0@aar') {
@@ -34,7 +32,6 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
 
     implementation 'com.google.code.gson:gson:2.8.2'
-
 
     // View Injection
     implementation 'com.jakewharton:butterknife:8.8.1'
@@ -117,11 +114,18 @@ android {
     }
 
     signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword System.getenv("DEBUG_STORE_PASS")
+            keyAlias 'debug'
+            keyPassword System.getenv("DEBUG_KEY_PASS")
+        }
+
         release {
-            storeFile file(KS)
-            storePassword KSPWD
-            keyAlias KALIAS
-            keyPassword KPWD
+            storeFile file('release.keystore')
+            storePassword System.getenv("RELEASE_STORE_PASS")
+            keyAlias 'release'
+            keyPassword System.getenv("RELEASE_KEY_PASS")
         }
     }
 
@@ -131,6 +135,7 @@ android {
 
     buildTypes {
         debug {
+            signingConfig signingConfigs.debug
             applicationIdSuffix '.debug'
             minifyEnabled false
             buildConfigField "boolean", "USE_CRASHLYTICS", "false"
