@@ -19,7 +19,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import com.viewpagerindicator.TitlePageIndicator;
@@ -30,9 +30,9 @@ import kz.gregbiv.bamboo.R;
  * Fragment which houses the View pager.
  */
 public class PlanCarouselFragment extends Fragment {
-    @Bind(R.id.tpi_header)
+    @BindView(R.id.tpi_header)
     protected TitlePageIndicator indicator;
-    @Bind(R.id.vp_pages)
+    @BindView(R.id.vp_pages)
     protected ViewPager          pager;
 
     @Override

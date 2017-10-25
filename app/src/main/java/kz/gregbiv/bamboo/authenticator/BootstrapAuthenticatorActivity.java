@@ -36,7 +36,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import com.squareup.otto.Bus;
@@ -115,11 +115,11 @@ public class BootstrapAuthenticatorActivity extends ActionBarAccountAuthenticato
     BootstrapService               bootstrapService;
     @Inject
     Bus                            bus;
-    @Bind(id.et_username)
+    @BindView(id.et_username)
     protected EditText             usernameText;
-    @Bind(id.et_password)
+    @BindView(id.et_password)
     protected EditText             passwordText;
-    @Bind(id.b_signin)
+    @BindView(id.b_signin)
     protected Button               signInButton;
     private SafeAsyncTask<Boolean> authenticationTask;
     private String                 authToken;

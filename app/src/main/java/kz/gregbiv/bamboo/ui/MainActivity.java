@@ -12,11 +12,11 @@ package kz.gregbiv.bamboo.ui;
 
 import android.accounts.OperationCanceledException;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 
 import android.os.Bundle;
 
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
@@ -29,7 +29,7 @@ import android.view.Window;
 
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import kz.gregbiv.bamboo.BootstrapApplication;
@@ -50,11 +50,12 @@ import javax.inject.Inject;
  */
 public class MainActivity extends BootstrapActivity implements NavigationView.OnNavigationItemSelectedListener {
     private boolean          userHasAuthenticated = false;
-    @Bind(R.id.nav_view)
+    @BindView(R.id.nav_view)
     protected NavigationView navigationView;
-    @Bind(R.id.drawer_layout)
+    @BindView(R.id.drawer_layout)
     protected DrawerLayout   drawer;
-    @Bind(R.id.tv_nav_username)
+    @Nullable
+    @BindView(R.id.tv_nav_username)
     TextView                 username;
     @Inject
     BootstrapServiceProvider serviceProvider;
@@ -81,7 +82,9 @@ public class MainActivity extends BootstrapActivity implements NavigationView.On
                                            R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 
         // Username
-        username.setText(sharedPreferences.getString(Constants.Auth.USERNAME, null));
+        if (username != null) {
+            username.setText(sharedPreferences.getString(Constants.Auth.USERNAME, null));
+        }
 
         // Current selected item
         navigationView.getMenu().getItem(0).setChecked(true);
