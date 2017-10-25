@@ -117,18 +117,11 @@ android {
     }
 
     signingConfigs {
-        debug {
-            // storeFile file('debug.keystore')
-            storePassword '123123'
-            keyAlias 'debug'
-            keyPassword '123123'
-        }
-
         release {
-            storeFile file('release.keystore')
-            storePassword '123123'
-            keyAlias 'release'
-            keyPassword '123123'
+            storeFile file(KS)
+            storePassword KSPWD
+            keyAlias KALIAS
+            keyPassword KPWD
         }
     }
 
@@ -138,7 +131,6 @@ android {
 
     buildTypes {
         debug {
-            signingConfig signingConfigs.debug
             applicationIdSuffix '.debug'
             minifyEnabled false
             buildConfigField "boolean", "USE_CRASHLYTICS", "false"
