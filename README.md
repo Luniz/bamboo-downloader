@@ -59,10 +59,6 @@ Once installed, then you can import the project into Android Studio:
 
 Then, Gradle will do everything for you.
 
-## Support
-
-Google+ Community: https://plus.google.com/communities/104728406764752407046
-
 ## Contributing
 
 There are several ways you could contribute to the development.
@@ -75,7 +71,7 @@ For development, it is recommended to use the Android Studio for development whi
 Import the project into the IDE using the build.gradle file. The IDE will resolve dependencies automatically.
 
 # Licence
-GnuCash Android is free software; you can redistribute it and/or
+Bamboo Downloader is free software; you can redistribute it and/or
 modify it under the terms of the Apache license, version 2.0.
 You may obtain a copy of the License at
 
