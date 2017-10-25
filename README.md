@@ -64,7 +64,7 @@ Then, Gradle will do everything for you.
 There are several ways you could contribute to the development.
 
 * Pull requests are always welcome! You could contribute code by fixing bugs, adding new features or automated tests.
-Take a look at the [bug tracker](https://github.com/gregbiv/bamboo-downloaderissues?state=open)
+Take a look at the [bug tracker](https://github.com/gregbiv/bamboo-downloader/issues?state=open)
 for ideas where to start.
 
 For development, it is recommended to use the Android Studio for development which is available for free.
