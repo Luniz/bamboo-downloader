@@ -70,15 +70,7 @@ for ideas where to start.
 For development, it is recommended to use the Android Studio for development which is available for free.
 Import the project into the IDE using the build.gradle file. The IDE will resolve dependencies automatically.
 
-# Licence
-Bamboo Downloader is free software; you can redistribute it and/or
-modify it under the terms of the Apache license, version 2.0.
-You may obtain a copy of the License at
+## License
 
-       http://www.apache.org/licenses/LICENSE-2.0
+MIT License.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
