@@ -1,5 +1,5 @@
 <a href="https://travis-ci.org/gregbiv/bamboo-downloader" target="_blank">
-<img src="https://travis-ci.org/gregbiv/bamboo-downloader.svg?branch=develop" alt="Travis build status" />
+<img src="https://travis-ci.org/gregbiv/bamboo-downloader.svg?branch=master" alt="Travis build status" />
 </a>
 
 # Introduction
