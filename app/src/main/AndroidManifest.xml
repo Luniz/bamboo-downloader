@@ -50,11 +50,6 @@
 
         <activity android:name=".ui.PlanActivity" />
         <activity android:name=".ui.BranchActivity" />
-
-        <!-- Replace with your Fabric Crashlytics key from Fabric.io -->
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="${fabricCrashlyticsApiKey}" />
     </application>
 
 </manifest>
