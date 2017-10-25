@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Bamboo Downloader</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="content_column">Content</string>
+    <string name="page_referrers">Referrers</string>
+    <string name="refresh_action">Refresh</string>
+    <string name="logout_action">Logout</string>
+
+    <string name="page_branches">Branches</string>
+    <string name="page_last_builds">Latest builds</string>
+
+    <!-- Projects -->
+    <string name="title_column">Title</string>
+    <string name="key_column">Key</string>
+    <string name="status_column">Status</string>
+    <string name="error_loading_projects">Loading projects failed</string>
+    <string name="no_projects">No Projects</string>
+
+    <!-- Plans -->
+    <string name="error_loading_plans">Loading plans failed</string>
+    <string name="no_plans">No Plans</string>
+
+    <!-- Plans -->
+    <string name="error_loading_branches">Loading branches failed</string>
+    <string name="no_branches">No Branches</string>
+
+    <!-- Builds -->
+    <string name="date_column">Date</string>
+    <string name="error_loading_builds">Loading builds failed</string>
+    <string name="no_builds">No Builds</string>
+
+    <!-- AuthenticatorActivity -->
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="message_signing_in">Signing in…</string>
+    <string name="blank_field_warning">Please populate this field</string>
+    <string name="signup_link">New to Bamboo? &lt;a href=http://bamboo.kolesa-team.org>Click here&lt;/a> to learn more.</string>
+    <string name="message_bad_credentials">Email Address or Password is incorrect</string>
+    <string name="message_network_error">There was an issue in communicating with the server.</string>
+    <string name="message_error_no_response">There was no response from the server.</string>
+    <string name="message_error_network_http_error">There was an issue in communicating with the server.</string>
+    <string name="message_error_unknown">An unknown error has occurred.</string>
+    <string name="message_auth_failed">Please enter a valid password</string>
+    <string name="message_auth_failed_new_account">Please enter a valid email address &amp; password</string>
+    <string name="timer_running">Timer is running %s</string>
+    <string name="timer_is_paused">Timer is paused</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="title_timer">Timer</string>
+    <string name="home">Home</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Close</string>
+    <string name="title_home">Home</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_main">Plans</string>
+    <string name="title_nav_delimiter">Other</string>
+    <string name="message_no_build_artifacts_to_download">No artifacts to download</string>
+    <string name="title_artifacts">Select artifact</string>
+
+</resources>
